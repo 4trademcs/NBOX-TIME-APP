@@ -2,9 +2,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     lanzarModal('alert-ok'); 
     lanzarModal('alert-re-confirm'); 
-    if (document.title === 'Nbox Time Homepage') {
-        lanzarModal('ventana-modal');
-    }
 });
 
 // Funcion global para llamar a un elemento externo al accionar boton
@@ -23,7 +20,7 @@ function lanzarModal(id) {
                             <button class="flexbox modal transparent">
                                 <div class="mensaje">
                                     <h2 class="texto"></h2>
-                                    <img class="bg-img" src="src/img/logo.png" alt="">
+                                    <img class="bg-img" src="public/img/logo.png" alt="">
                                 </div>   
                             </button> 
                         </form>
