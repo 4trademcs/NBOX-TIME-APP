@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nbox Time-Backoffice</title>
+    <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/general-format.css">
+    <link rel="stylesheet" href="public/css/ventana-modal.css">
+    <link rel="stylesheet" href="public/css/formulario.css">
+    <link rel="stylesheet" href="public/css/home.css">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <div class="logo flexbox">
+            <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" viewBox="0 0 357 320" preserveAspectRatio="xMidYMid meet">
+                <g class="svg" transform="translate(0,320) scale(0.1,-0.1)">
+                    <path d="M1465 2807c-836-425-985-503-982-510 1-5 74-42 161-84l158-75 182 92c369 188 691 353 701 360 6 4 33 18 62 30l51 22 234-110c128-61 265-124 303-142 39-17 126-58 195-91 69-32 133-59 142-59 18 0 301 154 305 166 2 5-88 51-199 103-112 52-239 111-283 132-198 94-706 329-709 329-1 0-145-74-321-163z"/>
+                    <path d="M3000 2243c-52-30-144-84-205-118-60-34-162-93-225-130-63-37-149-86-190-110-41-23-133-76-205-117-71-42-164-95-205-118-41-24-104-61-139-83-36-22-74-39-85-39-12 0-64 20-116 45-52 25-129 60-170 79-72 34-215 100-758 354-134 63-248 111-253 108-5-3-9-250-9-584l0-578 98-53c53-29 124-67 157-84 138-72 1013-538 1044-556l34-20 216 124c215 125 414 239 821 475 118 69 232 134 252 146l38 21v168c0 92-3 167-6 167-4 0-43-22-88-49-73-44-182-107-366-212-36-20-168-96-295-169-379-219-417-241-498-287l-77-44-158 82c-86 45-161 85-167 89-5 4-71 39-145 78-74 39-173 91-220 117-47 25-132 70-190 99-58 30-115 62-128 72l-23 19 3 262 3 261 115-52c119-54 658-305 813-379 69-33 91-39 105-31 24 15 344 200 422 244 36 20 88 50 115 67 28 17 158 93 290 168 132 76 276 159 320 185 44 26 101 59 128 74l47 27v169c0 94-1 170-2 170-2-1-46-26-98-57z"/>
+                </g>
+                </svg>                   
+            <p>Nbox Time</p> 
+        </div> 
+        <section class="slider-container pay" style="--margin: auto;--width:90vwd;">
+            <div class="slider" reverse="true" style="--width: 100px;--height: 50px;--quantity: 10;--duration:15">
+                <div class="list">
+                    <div class="item" style="--position: 1"><img src="public/img/bizum.png" alt=""></div>
+                    <div class="item" style="--position: 2"><img src="public/img/bbva.png" alt=""></div>
+                    <div class="item" style="--position: 3"><img src="public/img/MoneyGram.png" alt=""></div>
+                    <div class="item" style="--position: 4"><img src="public/img/paypal.png" alt=""></div>
+                    <div class="item" style="--position: 5"><img src="public/img/Remitly.png" alt=""></div>
+                    <div class="item" style="--position: 6"><img src="public/img/Revolut.png" alt=""></div>
+                    <div class="item" style="--position: 7"><img src="public/img/sepa.png" alt=""></div>
+                    <div class="item" style="--position: 8"><img src="public/img/WesternUnion.png" alt=""></div>
+                    <div class="item" style="--position: 9"><img src="public/img/zelle.png" alt=""></div>
+                    <div class="item" style="--position: 10"><img src="public/img/crypto.png" alt=""></div>
+                </div>
+            </div>
+            </section>     
+        <div class="header-buttons">
+            <button id="darkModeToggle" class="icon-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -60 512 512" width="2.5rem" height="2.5rem">
+                    <g class="svg" transform="translate(-40,450) scale(0.1,-0.1)">
+                        <path d="M2935 4919c-11-6-26-19-32-27-10-13-13-494-13-2330 0-1462 4-2320 10-2331 5-10 23-24 39-31 37-15 79 2 98 40 10 20 12 485 10 2332-2 2293-2 2308-22 2327-26 25-65 34-90 20z"/>
+                        <path d="M1490 3827c-44-22-50-49-50-235v-174l29-29c36-36 73-37 106-4 25 24 25 26 25 209 0 101-3 192-6 201-6 15-54 45-71 45-4 0-19-6-33-13z"/>
+                        <path d="M3452 3775c-87-13-117-30-124-70-8-39 14-70 93-134 458-365 599-1009 337-1536-81-162-234-344-378-448-129-94-130-95-130-132 0-64 36-83 215-111 119-19 311-14 423 10 348 75 640 285 817 586 235 401 220 917-39 1304-267 398-740 605-1214 531zm448-176c301-76 557-280 695-552 80-159 115-306 115-488 0-342-149-642-428-857-173-134-414-212-657-212h-100l82 79c304 295 457 670 440 1081-14 345-136 640-376 909l-66 74 105-6c58-4 143-16 190-28z"/>
+                        <path d="M658 3495c-30-17-44-52-34-89 3-13 63-83 132-155 110-114 130-131 158-131 17 0 39 6 48 14 25 18 39 62 29 89-14 36-253 276-281 282-14 2-37-2-52-10z"/>
+                        <path d="M2313 3497c-12-6-76-70-142-140-99-105-121-133-121-158 0-57 68-97 118-70 38 20 252 260 258 289 11 55-63 108-113 79z"/>
+                        <path d="M1354 3325c-264-57-485-258-575-522-31-93-33-105-33-243 0-138 2-150 33-243 82-239 260-417 499-500 115-40 287-49 408-22 300 67 528 291 600 591 22 91 22 257 0 348-72 298-299 523-596 591-80 18-253 18-336 0zm376-178c152-54 278-167 349-312 49-100 65-167 65-275 0-142-40-259-127-377-115-154-295-243-494-243-175 0-311 57-438 185-123 123-185 267-185 435 0 277 197 531 470 605 90 24 267 15 360-18z"/>
+                        <path d="M276 2619c-20-16-26-29-26-59 0-30 6-43 26-59 25-20 40-21 211-21 182 0 184 0 208 25 16 15 25 36 25 55 0 19-9 40-25 55-24 25-26 25-208 25-171 0-186-1-211-21z"/>
+                        <path d="M2354 2617c-20-17-27-33-27-57 0-24 7-40 27-57 26-22 33-23 212-23 183 0 185 0 209 25 16 15 25 36 25 55 0 19-9 40-25 55-24 25-26 25-209 25-179 0-186-1-212-23z"/>
+                        <path d="M756 1869c-126-131-144-158-132-204 8-31 57-58 91-49 28 7 262 246 276 282 10 26-4 69-29 88-9 8-31 14-48 14-28 0-48-17-158-131z"/>
+                        <path d="M2075 1975c-48-47-38-71 96-212 66-70 132-134 147-141 54-26 121 27 107 85-3 17-56 80-133 161-113 117-131 132-160 132-22 0-41-8-57-25z"/>
+                        <path d="M1469 1731l-29-29v-174c0-189 6-214 54-236 32-16 80-2 96 29 6 10 10 101 10 204 0 184 0 186-25 210-33 33-70 32-106-4z"/>
+                    </g>
+                    </svg>                          
+            </button>
+            
+            <div class="relative">
+                <button id="menuToggle" class="icon-button">
+                    <span class="icon">☰</span>
+                </button>
+                <nav id="menu" class="hidden-animated">
+                    <button id="user-register" class="menu-item admin" onclick="llamarFormularioModal(event)">Registrar nuevo usuario</button>
+                    <button id="consignment-register" class="menu-item" onclick="llamarFormularioModal(event)">Nueva remesa</button>
+                    <button id="show-users" class="menu-item admin" onclick="solicitarData('show-users')">Ver lista de usuarios</button>
+                    <button id="show-consignment" class="menu-item" onclick="solicitarData('show-consignment')">Ver lista de pedidos</button>
+                    <a id="login-button" class="menu-item" href="/auth">Login</a>
+                    <a id="home-button" class="menu-item" href="/">Home</a>
+                    <a class="menu-item" href="/terminos">Términos y Condiciones</a>
+                    <form method="get" action="/logout" class="form-get logout">
+                        <button id="logout-button" class="menu-item">Cerrar Sesión</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main container">
+        <section>
+            <h2>Bienvenido a tu backoffice</h2>
+            <p>Aqui veras las ultimas novedades que tenemos listas para ti.</p>
+            <div class="card">
+                <h3>Nuestros Servicios</h3>
+                <ul>
+                    <li>Envío rápido de remesas</li>
+                    <li>Tasas de cambio competitivas</li>
+                    <li>Seguimiento en tiempo real de sus envíos</li>
+                    <li>Atención al cliente 24/7</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="">
+            <h2>Últimas Transacciones</h2>
+            <div id="tables-container" class=" tablas-dinamicas"></div>
+        </section>
+    </main>
+
+    <aside class="aside">
+        <div class="aside-menu">
+            <h3>Enlaces rápidos</h3>
+                <a class="link" href="/">Home</a>
+                <buton class="link services" href="#">+Servicios:
+                    <div class="services-content hidden-animated">
+                        <button id="user-register" class="menu-item admin" onclick="llamarFormularioModal(event)">Registrar nuevo usuario</button>
+                        <button id="consignment-register" class="menu-item" onclick="llamarFormularioModal(event)">Nueva remesa</button>
+                        <button id="show-users" class="menu-item admin" onclick="solicitarData('show-users')">Ver lista de usuarios</button>
+                        <button id="show-consignment" class="menu-item" onclick="solicitarData('show-consignment')">Ver lista de pedidos</button>
+                        <a id="login-button" class="menu-item" href="/auth">Login</a>
+                        <a id="home-button" class="menu-item" href="/">Home</a>
+                        <a class="menu-item" href="/terminos">Términos y Condiciones</a>
+                        <form method="get" action="/logout" class="form-get logout">
+                            <button id="logout-button" class="menu-item">Cerrar Sesión</button>
+                        </form>
+                    </div>
+                <a class="link" href="#">Tutorial</a>
+                <a class="link" href="/terminos">Términos y Condiciones</a>
+        </div>
+    </aside>
+
+    <footer class="footer footer-content">
+        <div>
+            <h3>Nbox Time</h3>
+            <p>Su socio confiable para envíos de remesas internacionales.</p>
+        </div>
+        <div>
+            <h3>Enlaces rápidos</h3>
+            <ul>
+                <a class="link" href="/">Inicio</a>
+                <a class="link" href="#">Servicios</a>
+                <a class="link" href="/terminos">Términos y Condiciones</a>
+            </ul>
+        </div>
+        <div>
+            <h3>Contáctenos</h3>
+            <p>Email: nboxtime.services@gmail.com</p>
+            <p>Teléfono: +1 234 567 890</p>
+        </div>
+        
+    </footer>
+</div>
+    <script defer src="public/js/contact.js"></script>
+    <script defer src="public/js/static.js"></script>
+    <script src="public/js/validacionesFrontend3.js"></script>
+    <script defer src="public/js/solicitudes.js"></script>
+    <script src="public/js/home.js"></script>
+</body>
+</html>
